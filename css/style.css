@@ -1,0 +1,65 @@
+body {
+    /* background-image: url("https://images.pexels.com/photos/1478524/pexels-photo-1478524.jpeg");
+    background-color: #f2f2f2; */
+}
+
+.footer {
+    text-align: center;
+}
+
+.a {
+    color: red;
+}
+
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container {
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    background-color: #2a16168d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: top 0.5s ease-in-out;
+    transform: translateY(-100%);
+    /* Initially hidden above the screen */
+}
+
+.show {
+    transform: translateY(0);
+    /* Show the notification by moving it downwards */
+}
+
+#scrollUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
