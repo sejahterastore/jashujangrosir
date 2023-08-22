@@ -8,7 +8,7 @@ $(document).on('click', '.send', function() {
 
     /* Whatsapp Setting */
     var walink = 'https://web.whatsapp.com/send',
-        phone = '6287774552784',
+        phone = '6285710786069',
         text = 'Hi admin' + '%0A' + 'Data order kacamata polarized',
         text_yes = 'Your order was successfully sent.',
         text_no = 'Fill this form to order.';
