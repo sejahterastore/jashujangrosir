@@ -1,43 +1,48 @@
-$(document).on('click', '.send', function() {
-    /* Form Input */
-    var input_name = $("#name").val(),
-        input_phone = $("#phone").val(),
-        input_pembayaran = $("#pembayaran").val(),
-        input_warna = $("#warna").val(),
-        input_description = $("#description").val();
+$(document).ready(function () {
+  $(document).on('click', '.send', function () {
+    const input_name = $("#name").val();
+    const input_phone = $("#phone").val();
+    const input_pembayaran = $("#pembayaran").val();
+    const input_model = $("#model").val();
+    const input_warna = $("#warna").val();
+    const input_ukuran = $("#ukuran").val();
+    const input_description = $("#description").val();
 
-    /* Whatsapp Setting */
-    var walink = 'https://web.whatsapp.com/send',
-        phone = '6285710786069',
-        text = 'Hi admin' + '%0A' + 'Data order kacamata polarized',
-        text_yes = 'Your order was successfully sent.',
-        text_no = 'Fill this form to order.';
+    let walink = 'https://web.whatsapp.com/send';
+    const phone = '6285710786069';
+    const text = 'Hi admin' + '%0A' + 'Data order jas hujan';
+    const text_yes = 'Pesanan Anda berhasil dikirim.';
+    const text_no = 'Isi formulir ini untuk memesan.';
 
-    /* Smartphone Support */
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var walink = 'whatsapp://send';
+      walink = 'whatsapp://send';
     }
 
-    // Validation: Check if input_phone contains only numbers
-    // if (!/^\d+$/.test(input_phone)) {
-    //     document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">Invalid phone number format</div>';
-    //     document.getElementById("text-info2").innerHTML = '<div class="alert alert-danger">Invalid phone number format</div>';
-    //     return; // Stop further execution
-    // }
+    const isFormValid = validateForm(input_name, input_phone, input_pembayaran, input_model, input_warna, input_ukuran, input_description);
 
-    if (input_name != "" && input_phone != "" && input_pembayaran != "" && input_warna != "" && input_description != "") {
-        /* Whatsapp URL */
-        var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
-            '*Nama* : ' + input_name + '%0A' +
-            '*No. Whatsapp* : ' + input_phone + '%0A' +
-            '*Pembayaran* : ' + input_pembayaran + '%0A' +
-            '*Warna* : ' + input_warna + '%0A' +
-            '*Alamat Lengkap* : ' + input_description + '%0A';
+    if (isFormValid) {
+      const checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
+        '*Nama* : ' + input_name + '%0A' +
+        '*No. Whatsapp* : ' + input_phone + '%0A' +
+        '*Metode Pembayaran* : ' + input_pembayaran + '%0A' +
+        '*Model* : ' + input_model + '%0A' +
+        '*Warna* : ' + input_warna + '%0A' +
+        '*Ukuran* : ' + input_ukuran + '%0A' +
+        '*Alamat Lengkap* : ' + input_description + '%0A';
 
-        /* Whatsapp Window Open */
-        window.open(checkout_whatsapp, '_blank');
-        document.getElementById("text-info").innerHTML = '<div class="alert alert-success">' + text_yes + '</div>';
+      window.open(checkout_whatsapp, '_blank');
+      document.getElementById("text-info").innerHTML = '<div class="alert alert-success">' + text_yes + '</div>';
     } else {
-        document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">' + text_no + '</div>';
+      document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">' + text_no + '</div>';
     }
+  });
+
+  function validateForm(name, phone, pembayaran, model, warna, ukuran, description) {
+    // Add your validation logic here
+    if (!name || !phone || !pembayaran || !model || !warna || !ukuran || !description) {
+      // Display error messages or highlight the empty fields
+      return false;
+    }
+    return true;
+  }
 });
