@@ -39,10 +39,6 @@ $(document).ready(function () {
 
   function validateForm(name, phone, pembayaran, model, warna, ukuran, description) {
     // Add your validation logic here
-    if (!name || !phone || !pembayaran || !model || !warna || !ukuran || !description) {
-      // Display error messages or highlight the empty fields
-      return false;
-    }
-    return true;
+    return !(!name || !phone || !pembayaran || !model || !warna || !ukuran || !description);
   }
 });
