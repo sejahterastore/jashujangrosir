@@ -78,73 +78,78 @@
         <div class="image-container">
             <img style="margin: auto;" src="assets/img/arah panah bawah.gif" alt="Responsive Centered Image">
         </div>
-        <div class="col-lg-6 col-lg-offset-3">
-            <h4>Cara Pemesanan Produk</h4>
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    Silahkan di isi form di bawah ini..
-                </div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label>Pilih Metode Pembayaran<a class="a">*</a></label>
-                        <select name="pembayaran" class="form-control" id="pembayaran">
-                            <option value="">-- Pilih Metode Pembayaran --</option>
-                            <option value="Transfer Bank">Transfer Bank</option>
-                            <option value="COD(Bayar di Tempat)">COD(Bayar di Tempat)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Pilih Model<a class="a">*</a></label>
-                        <select name="model" class="form-control" id="model">
-                            <option value="">-- Pilih Model --</option>
-                            <option value="Model Gamis(resleting sampai perut)">Model Gamis(resleting sampai perut)</option>
-                            <option value="Model Jubah(resleting sampai kaki)">Model Jubah(resleting sampai kaki)</option>
-                            <option value="Model Stelan Celana">Model Stelan Celana</option>
-                           <!-- <option value="Model Stelan Rok">Model Stelan Rok</option>
-                            <option value="Model Ponco">Model Ponco</option> -->
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Pilih Warna<a class="a">*</a></label>
-                        <select name="warna" class="form-control" id="warna">
-                            <option value="">-- Pilih Warna --</option>
-                            <option value="Navy">Navy</option>
-                            <option value="Merah Maron">Merah Maron</option>
-                            <option value="Hitam">Hitam</option>
-                            <option value="Mocca">Mocca</option>                            
-                            <option value="Hijau Army">Hijau Army</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Pilih Ukuran<a class="a">*</a></label>
-                        <select name="ukuran" class="form-control" id="ukuran">
-                            <option value="">-- Pilih Ukuran --</option>
-                            <option value="M"> M (BB 45 - 55kg) </option>
-                            <option value="L"> L (BB 60 - 70kg)</option>
-                            <option value="XL"> XL (BB 70 - 80kg)</option>
-                            <option value="XXL"> XXL (BB 80 - 95kg)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Nama Lengkap <a class="a">*</a></label>
-                        <input type="text" name="name" class="form-control" placeholder="Tulis nama Anda" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label>No. WhatsApp<a class="a">*</a></label>
-                        <input type="text" name="phone" class="form-control" placeholder="Tulis nomor HP aktif Anda: contoh 087774552784" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label>Alamat lengkap (Harap sertakan rt/rw/no.rumah/kecamatan)<a class="a">*</a></label>
-                        <textarea name="description" class="form-control" rows="3" placeholder="Tulis alamat lengkap untuk pengiriman, (Kecamatan, Kota/Kabupaten, Provinsi, dan Kode Pos bila ada)" id="description"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-success send">Beli Sekarang</button>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <h4>Cara Pemesanan Produk</h4>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Silahkan isi form di bawah ini...
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="pembayaran">Pilih Metode Pembayaran <span class="a">*</span></label>
+                                <select name="pembayaran" class="form-control" id="pembayaran">
+                                    <option value="">-- Pilih Metode Pembayaran --</option>
+                                    <option value="Transfer Bank">Transfer Bank</option>
+                                    <option value="COD(Bayar di Tempat)">COD (Bayar di Tempat)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Pilih Model <span class="a">*</span></label>
+                                <select name="model" class="form-control" id="model">
+                                    <option value="">-- Pilih Model --</option>
+                                    <option value="Model Gamis (resleting sampai perut)">Model Gamis (resleting sampai perut)</option>
+                                    <option value="Model Jubah (resleting sampai kaki)">Model Jubah (resleting sampai kaki)</option>
+                                    <option value="Model Stelan Celana">Model Stelan Celana</option>
+                                    <!-- <option value="Model Stelan Rok">Model Stelan Rok</option>
+                                    <option value="Model Ponco">Model Ponco</option> -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="warna">Pilih Warna <span class="a">*</span></label>
+                                <select name="warna" class="form-control" id="warna">
+                                    <option value="">-- Pilih Warna --</option>
+                                    <option value="Navy">Navy</option>
+                                    <option value="Merah Maron">Merah Maron</option>
+                                    <option value="Hitam">Hitam</option>
+                                    <option value="Mocca">Mocca</option>
+                                    <option value="Hijau Army">Hijau Army</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ukuran">Pilih Ukuran <span class="a">*</span></label>
+                                <select name="ukuran" class="form-control" id="ukuran">
+                                    <option value="">-- Pilih Ukuran --</option>
+                                    <option value="M">M (BB 45 - 55kg)</option>
+                                    <option value="L">L (BB 60 - 70kg)</option>
+                                    <option value="XL">XL (BB 70 - 80kg)</option>
+                                    <option value="XXL">XXL (BB 80 - 95kg)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap <span class="a">*</span></label>
+                                <input type="text" name="name" class="form-control" placeholder="Tulis nama Anda" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">No. WhatsApp <span class="a">*</span></label>
+                                <input type="text" name="phone" class="form-control" placeholder="Tulis nomor HP aktif Anda: contoh 087774552784" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Alamat lengkap (Harap sertakan rt/rw/no.rumah/kecamatan) <span class="a">*</span></label>
+                                <textarea name="description" class="form-control" rows="3" placeholder="Tulis alamat lengkap untuk pengiriman, (Kecamatan, Kota/Kabupaten, Provinsi, dan Kode Pos bila ada)" id="description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success send">Beli Sekarang</button>
+                            </div>
 
-                    <div id="text-info"></div>
+                            <div id="text-info"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <!-- <div style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: greenyellow; text-align: center; padding: 10px; ">
             <a href="https://api.whatsapp.com/send?phone=6285710786069&text=Halo,%20saya%20ingin%20order%20jas%20hujan" target="_blank">
                 <span style="color: black; font-size:large; font: bold;">
