@@ -10,7 +10,11 @@
     <title>Jas Hujan Keren - Gaya Modis dan Perlindungan Optimal</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideWarna.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="dist/reveal.css">
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" async></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" async></script>
 
@@ -41,35 +45,49 @@
 <div class="notification" id="notification">
     <p>🛍️ New order: <span id="orderDetails"></span></p>
 </div>
-    <div class="container">
-        <div class="image-container">
-            <img src="assets/img/lp-1a.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-            <img src="assets/img/lp-1b.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-            <img src="assets/img/lp-1c.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-            <img src="assets/img/lp-1d.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-            <img src="assets/img/lp-1e.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-           <!-- <img src="assets/img/lp-1f.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200"> -->
-            <img src="assets/img/lp-1g.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-            <!--<img src="assets/img/lp-1h.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
-            <img src="assets/img/lp-1i.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200"> -->
-            <img src="assets/img/lp-1j.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+<div class="image-container">
+    <img src="assets/img/header.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+</div>
 
-            <div class="slideshow-container">
-                <div class="mySlides">
-                    <img src="assets/img/test1.png" alt="Image 1">
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="assets/img/merah.png" alt="Gambar 1">
+            </div>
+            <div class="slide fade">
+              <img src="assets/img/mocca.png" alt="Gambar 2">
+            </div>
+            <div class="slide fade">
+              <img src="assets/img/hitam.png" alt="Gambar 3">
+            </div>
+            <div class="slide fade">
+                <img src="assets/img/biru.png" alt="Gambar 4">
+            </div>
+            <div class="slide fade">
+                <img src="assets/img/hijau.png" alt="Gambar 5">
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/img/keunggulan.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+        </div>
+        
+        <div class="slideshow-container2">
+                <div class="slide2 fade2">
+                  <img src="assets/img/test1.png" alt="Gambar 1">
                 </div>
-                <div class="mySlides">
-                    <img src="assets/img/test2.png" alt="Image 2">
+                <div class="slide2 fade2">
+                  <img src="assets/img/test2.png" alt="Gambar 2">
                 </div>
-                <div class="mySlides">
-                    <img src="assets/img/test3.png" alt="Image 3">
+                <div class="slide2 fade2">
+                  <img src="assets/img/test3.png" alt="Gambar 3">
                 </div>
-                <div class="mySlides">
-                    <img src="assets/img/test4.png" alt="Image 4">
+                <div class="slide2 fade2">
+                    <img src="assets/img/test4.png" alt="Gambar 4">
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-             </div>
+        </div>
+           
+
             <img style="margin: auto;" src="assets/img/promo.gif" alt="Responsive Centered Image">
             <img style="margin: auto;" src="assets/img/counter promo.gif" alt="Responsive Centered Image">
             <img src="assets/img/lp-2.png" alt="Responsive Centered Image">
@@ -96,17 +114,6 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="model">Pilih Model <span class="a">*</span></label>
-                                <select name="model" class="form-control" id="model">
-                                    <option value="">-- Pilih Model --</option>
-                                    <option value="Model Gamis (resleting sampai perut)">Model Gamis (resleting sampai perut)</option>
-                                    <option value="Model Jubah (resleting sampai kaki)">Model Jubah (resleting sampai kaki)</option>
-                                    <option value="Model Stelan Celana">Model Stelan Celana</option>
-                                    <!-- <option value="Model Stelan Rok">Model Stelan Rok</option>
-                                    <option value="Model Ponco">Model Ponco</option> -->
-                                </select>
-                            </div>
-                            <div class="form-group">
                                 <label for="warna">Pilih Warna <span class="a">*</span></label>
                                 <select name="warna" class="form-control" id="warna">
                                     <option value="">-- Pilih Warna --</option>
@@ -121,10 +128,8 @@
                                 <label for="ukuran">Pilih Ukuran <span class="a">*</span></label>
                                 <select name="ukuran" class="form-control" id="ukuran">
                                     <option value="">-- Pilih Ukuran --</option>
-                                    <option value="M">M (BB 45 - 55kg)</option>
-                                    <option value="L">L (BB 60 - 70kg)</option>
-                                    <option value="XL">XL (BB 70 - 80kg)</option>
-                                    <option value="XXL">XXL (BB 80 - 95kg)</option>
+                                    <option value="Maksimal bb 70kg">Maksimal bb 70kg</option>
+                                    <option value="BB diatas 70kg - 95kg">Di Atas bb 90kg</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -149,18 +154,9 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: greenyellow; text-align: center; padding: 10px; ">
-            <a href="https://api.whatsapp.com/send?phone=6285710786069&text=Halo,%20saya%20ingin%20order%20jas%20hujan" target="_blank">
-                <span style="color: black; font-size:large; font: bold;">
-                    Klik Disini Untuk Order Via WhatsApp
-
-                </span>
-            </a>
-        </div> -->
         
         <div>
-            <a href="https://api.whatsapp.com/send?phone=6285710786069&text=Halo,%20saya%20ingin%20order%20jas%20hujan" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=6285710786069&text=Halo,%20saya%20ingin%20order%20jas%20hujan%20AKULA" target="_blank">
                 <img src="assets/img/klik-wa.png" alt="Responsive Centered Image" loading="lazy">
             </a>
         </div>
@@ -174,6 +170,12 @@
     <script src="js/notif.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/slide2.js"></script>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
 
 </body>
 

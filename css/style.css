@@ -59,29 +59,36 @@
     cursor: pointer;
 }
 
-/* slide image */
 .slideshow-container {
     position: relative;
-    max-width: 400px;
+    max-width: 800px;
     margin: 0 auto;
-}
-.mySlides {
+  }
+  .slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slide {
     display: none;
-}
-img {
+  }
+  
+  img {
     width: 100%;
-}
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.next {
-    right: 0;
-}
-/* slide image */
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -3,14 +3,13 @@ $(document).ready(function () {
     const input_name = $("#name").val();
     const input_phone = $("#phone").val();
     const input_pembayaran = $("#pembayaran").val();
-    const input_model = $("#model").val();
     const input_warna = $("#warna").val();
     const input_ukuran = $("#ukuran").val();
     const input_description = $("#description").val();
 
     let walink = 'https://web.whatsapp.com/send';
     const phone = '6285710786069';
-    const text = 'Hi admin' + '%0A' + 'Data order jas hujan';
+    const text = 'Hi admin' + '%0A' + 'Data order jas hujan stelan akula';
     const text_yes = 'Pesanan Anda berhasil dikirim.';
     const text_no = 'Isi formulir ini untuk memesan.';
 
@@ -18,14 +17,13 @@ $(document).ready(function () {
       walink = 'whatsapp://send';
     }
 
-    const isFormValid = validateForm(input_name, input_phone, input_pembayaran, input_model, input_warna, input_ukuran, input_description);
+    const isFormValid = validateForm(input_name, input_phone, input_pembayaran, input_warna, input_ukuran, input_description);
 
     if (isFormValid) {
       const checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
         '*Nama* : ' + input_name + '%0A' +
         '*No. Whatsapp* : ' + input_phone + '%0A' +
         '*Metode Pembayaran* : ' + input_pembayaran + '%0A' +
-        '*Model* : ' + input_model + '%0A' +
         '*Warna* : ' + input_warna + '%0A' +
         '*Ukuran* : ' + input_ukuran + '%0A' +
         '*Alamat Lengkap* : ' + input_description + '%0A';
@@ -37,8 +35,8 @@ $(document).ready(function () {
     }
   });
 
-  function validateForm(name, phone, pembayaran, model, warna, ukuran, description) {
+  function validateForm(name, phone, pembayaran, warna, ukuran, description) {
     // Add your validation logic here
-    return !(!name || !phone || !pembayaran || !model || !warna || !ukuran || !description);
+    return !(!name || !phone || !pembayaran || !warna || !ukuran || !description);
   }
 });
