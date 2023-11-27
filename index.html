@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jas Hujan Terlaris</title>
+    <meta name="description" content="Jual jas hujan berkualitas dengan berbagai pilihan dan ukuran. Temukan jas hujan terbaik untuk melindungi diri Anda dari hujan.">
+    <meta name="keywords" content="jas hujan, perlengkapan hujan, pakaian hujan, jas hujan terbaik, toko jas hujan">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide-gambar.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="dist/reveal.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" async></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" async></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1027152088410769'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=1027152088410769&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+</head>
+
+<body>
+<div class="notification" id="notification">
+    <p>🛍️ New order: <span id="orderDetails"></span></p>
+</div>
+    <div class="container">
+        <div class="image-container">
+            
+        </br>
+            <img src="assets/img/image 1.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 2.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 3.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 4.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 5.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 6.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 7.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 8.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                  <h4>Isi Formulir Pemesanan dibawah ini untuk Mendapatkan Promo</h4>
+                  <h4 style="color: red;" >Mengisi Formulir Order Berarti Setuju Pemesanan</h4>
+                  <div class="panel panel-success">
+                      <div class="panel-heading">
+                          Silahkan isi form di bawah ini...
+                      </div>
+                      <div class="panel-body">
+                          <div class="form-group">
+                              <label for="pembayaran">Pilih Metode Pembayaran <span class="a">*</span></label>
+                              <select name="pembayaran" class="form-control" id="pembayaran">
+                                  <option value="">-- Pilih Metode Pembayaran --</option>
+                                  <option value="Transfer Bank">Transfer Bank</option>
+                                  <option value="COD(Bayar di Tempat)">COD (Bayar di Tempat)</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="ukuran">Ukuran Order <span class="a">*</span></label>
+                              <select name="ukuran" class="form-control" id="ukuran">
+                                  <option value="">-- Pilih Ukuran --</option>
+                                  <option value="M">M</option>
+                                  <option value="L">L</option>
+                                  <option value="XL">XL</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="jumlah">Jumlah Order <span class="a">*</span></label>
+                            <select name="jumlah" class="form-control" id="jumlah">
+                                <option value="">-- Pilih jumlah --</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="name">Nama Lengkap <span class="a">*</span></label>
+                              <input type="text" name="name" class="form-control" placeholder="Tulis nama Anda" id="name">
+                          </div>
+                          <div class="form-group">
+                              <label for="phone">No. WhatsApp <span class="a">*</span></label>
+                              <input type="text" name="phone" class="form-control" placeholder="Tulis nomor HP aktif Anda: contoh 087774552784" id="phone">
+                          </div>
+                          <div class="form-group">
+                              <label for="description">Alamat lengkap (Harap sertakan, Patokan/Rt/Rw/No.rumah/Desa/Kecamatan/Kabupaten) <span class="a">*</span></label>
+                              <textarea name="description" class="form-control" rows="3" placeholder="Tulis alamat lengkap untuk pengiriman, (Patokan/Rt/Rw/No.rumah/Desa/Kecamatan/Kabupaten/Provinsi/Kode Pos)" id="description"></textarea>
+                          </div>
+                          <div class="form-group">
+                              <button class="btn btn-success send">Ambil Promo</button>
+                          </div>
+
+                          <div id="text-info"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <img src="assets/img/image 9.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 10.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 11.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+            <img src="assets/img/image 12.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
+        </div>
+
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2023 Sejahtera Store. All rights reserved.</p>
+            </div>
+        </footer>
+
+       
+    </div>
+
+    <button id="scrollUp">↑</button>
+    <script src="js/notif.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slide-gambar.js"></script>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+
+</body>
+
+
+
+
+</html>
