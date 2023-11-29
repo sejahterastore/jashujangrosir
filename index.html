@@ -12,12 +12,11 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide-gambar.css">
+    
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="dist/reveal.css">
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" async></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" async></script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -59,62 +58,50 @@
             <img src="assets/img/image 7.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
             <img src="assets/img/image 8.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
             <div class="row">
-              <div class="col-lg-6 offset-lg-3">
-                  <h4>Isi Formulir Pemesanan dibawah ini untuk Mendapatkan Promo</h4>
-                  <h4 style="color: red;" >Mengisi Formulir Order Berarti Setuju Pemesanan</h4>
-                  <div class="panel panel-success">
-                      <div class="panel-heading">
-                          Silahkan isi form di bawah ini...
-                      </div>
-                      <div class="panel-body">
-                          <div class="form-group">
-                              <label for="pembayaran">Pilih Metode Pembayaran <span class="a">*</span></label>
-                              <select name="pembayaran" class="form-control" id="pembayaran">
-                                  <option value="">-- Pilih Metode Pembayaran --</option>
-                                  <option value="Transfer Bank">Transfer Bank</option>
-                                  <option value="COD(Bayar di Tempat)">COD (Bayar di Tempat)</option>
-                              </select>
-                          </div>
-                          <div class="form-group">
-                              <label for="ukuran">Pilih Ukuran <span class="a">*</span></label>
-                              <select name="ukuran" class="form-control" id="ukuran">
-                                  <option value="">-- Pilih Ukuran --</option>
-                                  <option value="M">M</option>
-                                  <option value="L">L</option>
-                                  <option value="XL">XL</option>
-                              </select>
-                          </div>
-                          <!-- <div class="form-group">
-                            <label for="jumlah">Jumlah Order <span class="a">*</span></label>
-                            <select name="jumlah" class="form-control" id="jumlah">
-                                <option value="">-- Pilih jumlah --</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
+              <div class="col-lg-6 col-lg-offset-3">
+                <h4>Cara Pemesanan Produk</h4>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Silahkan di isi form di bawah ini..
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Pilih Metode Pembayaran<a class="a">*</a></label>
+                            <select name="pembayaran" class="form-control" id="pembayaran">
+                                <option value="">-- Pilih Metode Pembayaran --</option>
+                                <option value="Transfer Bank">Transfer Bank</option>
+                                <option value="COD(Bayar di Tempat)">COD(Bayar di Tempat)</option>
                             </select>
-                          </div> -->
-                          <div class="form-group">
-                              <label for="name">Nama Lengkap <span class="a">*</span></label>
-                              <input type="text" name="name" class="form-control" placeholder="Tulis nama Anda" id="name">
-                          </div>
-                          <div class="form-group">
-                              <label for="phone">No. WhatsApp <span class="a">*</span></label>
-                              <input type="text" name="phone" class="form-control" placeholder="Tulis nomor HP aktif Anda: contoh 087774552784" id="phone">
-                          </div>
-                          <div class="form-group">
-                              <label for="description">Alamat lengkap (Harap sertakan, Patokan/Rt/Rw/No.rumah/Desa/Kecamatan/Kabupaten) <span class="a">*</span></label>
-                              <textarea name="description" class="form-control" rows="3" placeholder="Tulis alamat lengkap untuk pengiriman, (Patokan/Rt/Rw/No.rumah/Desa/Kecamatan/Kabupaten/Provinsi/Kode Pos)" id="description"></textarea>
-                          </div>
-                          <div class="form-group">
-                              <button class="btn btn-success send">Ambil Promo</button>
-                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Pilih Ukuran<a class="a">*</a></label>
+                            <select name="ukuran" class="form-control" id="ukuran">
+                                <option value="">-- Pilih Ukuran --</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Nama Lengkap <a class="a">*</a></label>
+                            <input type="text" name="name" class="form-control" placeholder="Tulis nama Anda" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label>No. WhatsApp<a class="a">*</a></label>
+                            <input type="text" name="phone" class="form-control" placeholder="Tulis nomor HP aktif Anda: contoh 087774552784" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat lengkap (Harap sertakan rt/rw/no.rumah/kecamatan)<a class="a">*</a></label>
+                            <textarea name="description" class="form-control" rows="3" placeholder="Tulis alamat lengkap untuk pengiriman, (Kecamatan, Kota/Kabupaten, Provinsi, dan Kode Pos bila ada)" id="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success send">Ambil Promo</button>
+                        </div>
 
-                          <div id="text-info"></div>
-                      </div>
-                  </div>
+                        <div id="text-info"></div>
+                    </div>
               </div>
+            </div>
           </div>
             <img src="assets/img/image 9.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
             <img src="assets/img/image 10.png" alt="Responsive Centered Image" loading="lazy" width="300" height="200">
